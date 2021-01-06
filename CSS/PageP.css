@@ -4,7 +4,8 @@
     
     background-color: rgb(223, 223, 223);
     text-align: center;
-    
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
     
   }
   
@@ -36,24 +37,7 @@
     }
     
   
-     /* .head{
-      justify-content: center;
-      display: flex;
-      
-      } 
-
-
-    .head> div {
      
-      color: rgb(0, 0, 0);
-      width: 1800px;
-      height: 200px;
-      margin: 1px;
-      text-align: center;
-      line-height: 75px;
-      font-size: 20px;
-  }  */
-   
   
   
   .navigateur{
@@ -147,8 +131,8 @@
 
 
   
-  * {box-sizing: border-box}
-  body {font-family: Verdana, sans-serif; margin:0}
+  
+  
   .mySlides {display: none}
   img {vertical-align: middle;}
   
