@@ -1,18 +1,38 @@
 
 	 
-    function ValidateEmail(inputText)
-    {
-    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if(inputText.value.match(mailformat))
-    {
-   alert("Valid email address!");
-    document.form1.text1.focus();
-    return true;
-    }
-    else
-    {
-    alert("You have entered an invalid email address!");
-    document.form1.text1.focus();
-    return false;
-    }
-    }
+     var formValid = document.getElementById('bouton_envoi');
+     var prenom = document.getElementById('prenom');
+     var nom = document.getElementById('nom');
+     var missPrenom = document.getElementById('missPrenom');
+     var missNom = document.getElementById('missNom');
+     var prenomValid = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
+     var nomValid = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
+     
+     formValid.addEventListener('click', validation);
+     
+     function validation(event){
+         //Si le champ est vide
+         if (prenom.validity.valueMissing){
+             event.preventDefault();
+             missPrenom.textContent = 'Prénom manquant';
+             missPrenom.style.color = 'red';
+         //Si le format de données est incorrect
+         }else if (prenomValid.test(prenom.value) == false){
+             event.preventDefault();
+             missPrenom.textContent = 'Format incorrect';
+             missPrenom.style.color = 'orange';
+         }else{ 
+         }
+         
+         if (nom.validity.valueMissing){
+           event.preventDefault();
+           missNom.textContent = 'Nom manquant';
+           missNom.style.color = 'red';
+       //Si le format de données est incorrect
+       }else if (nomValid.test(nom.value) == false){
+           event.preventDefault();
+           missNom.textContent = 'Format incorrect';
+           missNom.style.color = 'orange';
+       }else{ 
+       }
+     }

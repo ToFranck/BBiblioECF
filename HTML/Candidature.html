@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candidature</title>
     <link type="text/css" rel="stylesheet" href="/CSS/Candidature.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -15,10 +17,10 @@
             <h1 id="titrep"> Candidature </h1> <br><br><br><br><br><br><br><br>
             <div class="navigateur"> 
                 <div><button class="button"><a href="PageP.html">Acceuil</a></button></div>   
-                <div><button class="button"><a href="Oeuvres.html">Oeuvres</a></button></div>
+                <div><button class="button"><a href="RechercheOeuvres.html">Oeuvres</a></button></div>
                 <div><button class="button"><a href="Historique.html">Historique des Prix</a></button></div>
                 <div><button class="button"><a href="Règlement.html">Règlement</a></button></div>
-                <div><button class="button"><a href="Connexion.html">Connexion</a></button></div>
+                <div><button class="button"><a href="Connexion.html">Connexion/Déconnexion</a></button></div>
                 
                 
             </div>
@@ -33,16 +35,20 @@
         <div class="col2"> 
            
            
-                    <h1></h1>
+                    <h1>Déposez votre candidature!</h1>
             <form>
-                <label for="fname">Nom:</label><br>
-                <input type="text" id="fname" name="fname"><br><br>
-                
-                <label for="lname">Prénom:</label><br>
-                <input type="text" id="lname" name="lname"><br><br>
+                <label for='nom'>Nom </label> <br>
+                <input type='text' name='nom' id='nom' maxlength='20' required> <br>
+                <span id='missNom'></span><br>
 
-                <label for="mail">Adresse mail:</label><br>
-                <input type="text" id="mdp" name="mdp"><br><br>
+                <label for='prenom'>Prenom </label> <br>
+                <input type='text' name='prenom' id='prenom' maxlength='20' required> <br>
+                <span id='missPrenom'></span><br>
+                
+                <label for='mail'>Entrez votre mail : </label> <br>
+                <input type='email' name='mail' id='mail' required><br>
+                
+         
 
                 
                 
@@ -58,12 +64,14 @@
               
                 
                 
-                <input type="submit" value="Valider">
+                <input type='submit' value='Valider' id='bouton_envoi'>
             
             
             
             
             </form>
+
+          
             
             
         </div>

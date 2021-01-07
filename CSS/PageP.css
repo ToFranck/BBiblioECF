@@ -5,7 +5,8 @@
     background-color: rgb(223, 223, 223);
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 0;
     
   }
   
@@ -83,6 +84,7 @@
   a{
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-size: 18px;
   }
 
 
@@ -136,7 +138,7 @@
   .mySlides {display: none}
   img {vertical-align: middle;}
   
-  /* Slideshow container */
+ 
   .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -146,11 +148,15 @@
 
   
   
+  .text >a{
+    font-size: 35px;
+    font-weight: bolder;
+    color:Red;
+  }
   
-  /* Caption text */
   .text {
     color: #f2f2f2;
-    font-size: 15px;
+    font-size: 20px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -159,7 +165,7 @@
     font-weight:bold;
   }
   
-  /* Number text (1/4 etc) */
+  
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -168,7 +174,7 @@
     top: 0;
   }
   
-  /* The dots/bullets/indicators */
+  
   .dot {
     cursor: pointer;
     height: 15px;
@@ -184,7 +190,7 @@
     background-color: #717171;
   }
   
-  /* Fading animation */
+  
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -202,7 +208,7 @@
     to {opacity: 1}
   }
   
-  /* On smaller screens, decrease text size */
+  
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }

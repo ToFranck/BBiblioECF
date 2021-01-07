@@ -1,14 +1,15 @@
 
-    * {
-        box-sizing: border-box;
-      }
+ 
       
       
       body {
         
         background-color: rgb(223, 223, 223);
         text-align: center;
-        
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 25px;
+        margin: 0;
+    
     
         
         
@@ -89,6 +90,7 @@
       a{
         text-decoration: none;
         color: rgb(0, 0, 0);
+        font-size: 18px;
       }
     
       
