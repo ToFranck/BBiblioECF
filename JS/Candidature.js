@@ -11,12 +11,12 @@
      formValid.addEventListener('click', validation);
      
      function validation(event){
-         //Si le champ est vide
+         //Si champ est vide
          if (prenom.validity.valueMissing){
              event.preventDefault();
              missPrenom.textContent = 'Prénom manquant';
              missPrenom.style.color = 'red';
-         //Si le format de données est incorrect
+         //Si données est incorrect
          }else if (prenomValid.test(prenom.value) == false){
              event.preventDefault();
              missPrenom.textContent = 'Format incorrect';
@@ -28,11 +28,12 @@
            event.preventDefault();
            missNom.textContent = 'Nom manquant';
            missNom.style.color = 'red';
-       //Si le format de données est incorrect
+       //Si données est incorrect
        }else if (nomValid.test(nom.value) == false){
            event.preventDefault();
            missNom.textContent = 'Format incorrect';
            missNom.style.color = 'orange';
        }else{ 
+        document.location.href="PageP.html"
        }
      }

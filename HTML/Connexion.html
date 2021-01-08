@@ -32,25 +32,26 @@
         
         <div class="col2"> <br>
             
+                <!-- Enregistrer la connexion de l'utilisateur -->
                 
-                
-                    <form id="form" action="/" method="GET">
+                 <form id="form" action="/" method="GET">
                         <div>
-                          <label for="name">Nom de compte</label><br>
+                          <label for="name">Nom de compte:</label><br>
                           <input id="name" name="name" type="text" required>
                         </div>
                         <div>
                         
                         <div class="mdp">
-                          <label for="password">Mot de passe </label> <br>
-                          <input id="password" name="password" type="password">
+                          
+
+                          <label for="mdp">Mot de passe:</label><br>
+                            <input type="password" id="mdp" name="mdp" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Doit contenir au moins un chiffre et une lettre majuscule et minuscule, et au moins 10 caractères ou plus" required> 
                         </div> <br>
                       
                           
                         <button type="submit"> Valider votre saisie </button>
-                    </form>
-                 
-      
+                    </form> 
+                   
                 
 
             

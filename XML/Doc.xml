@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<oeuvre>
-    <titre>Le petit prince</titre>
-    <auteur>
-        <nom>  </nom>
-        <prenom>haypocalc.com</prenom>
-    </auteur>
-    <editeur>
-      <prix>12 euros</prix>
+       
+      <bibliothèque>
+        <oeuvre1>
+            <titre>Le petit prince</titre>
+            
+            <auteur>Antoine de SAINT-EXUPERY</auteur>
+            
+            <editeur>Lorem</editeur>
+
+            <edition>3em edition</edition>
+
+            <date>12/03/1945</date>
+
+            
+            <pages>150</pages>
+            
+            <résumé>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem vero ratione amet omnis in aperiam dolorum iure mollitia asperiores assumenda facere minima corrupti, doloremque necessitatibus ipsa maxime optio natus quis.</résumé>
+            
+            <prix>12 euros</prix>
+
+            <note> /40</note>
+            
+            <commentaire> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, facilis recusandae. Voluptatem sint deserunt laborum non. Nemo voluptates, necessitatibus qui dicta beatae possimus harum. Maxime quis doloribus eveniet qui labore. </commentaire>
+            
+        </oeuvre1>
       
-    </editeur>
-</oeuvre>
+      </bibliothèque> 

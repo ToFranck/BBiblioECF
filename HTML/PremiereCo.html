@@ -38,33 +38,30 @@
             
             <h1>Creation de votre profil</h1>
             
-            <form>
-                <label for="fname">Nom:</label><br>
-                <input type="text" id="fname" name="fname"><br><br>
+                        <!-- Prends en compte toutes les infos entrées pour une fiche d'utilisateur et reporter au profil de celui-ci -->
+            <div class="container">
+                <form>
+                  <label for="usrname">Nom</label><br>
+                  <input type="text" id="usrname" name="usrname" required> <br>
+
+                  <label for="prenom">Prenom</label><br>
+                  <input type="text" id="prenom" name="prenom" required> <br>
+              
+                  <label for="psw">Mot de passe</label><br>
+                  <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Doit contenir au moins un chiffre et une lettre majuscule et minuscule, et au moins 10 caractères ou plus" required>
+
+                  <p>Si vous etes juré choissisez votre catégorie:</p> <br>
+                  
+                  
                 
-                <label for="lname">Prénom:</label><br>
-                <input type="text" id="lname" name="lname"><br><br>
-
-                <label for="mdp">Nouveau mot de passe:</label><br>
-                <input type="text" id="mdp" name="mdp"><br><br>
-
-                <label for="conf">Confirmation</label><br>
-                <input type="text" id="conf" name="conf"><br><br>
-
-                
-                <p>Si vous etes juré choissisez votre catégorie:</p>
-                
-                <input type="radio" id="R Francais" name="type" value="R Francais">
-                <label for="R Francais">Roman Français</label><br><br>
-
-                <input type="radio" id="R Etranger" name="type" value="R Etranger">
-                <label for="R Etranger">Roman Etranger </label><br><br>
-
-                <input type="radio" id="Doc" name="type" value="Doc">
-                <label for="Doc">Documentaire</label><br><br>
-
-                <input type="radio" id="Bio" name="type" value="Bio">
-                <label for="Bio">Biographie</label><br><br>
+                <label for="cat">Votre catégorie:</label>
+                <select id="cat" name="cat" form="cat">
+                  <option value=""></option>
+                  <option value="Roman Francais">Roman Francais</option>
+                  <option value="Roman Etranger">Roman Etranger</option>
+                  <option value="Documentaire">Documentaire</option>
+                  <option value="Biographie">Biographie</option>
+                </select>
 
                         <hr>
                 <p>Partie Auteur/Editeur</p>
@@ -80,18 +77,29 @@
 
                 <p>Biographie: </p>
 
-                <textarea name="message" rows="10" cols="30">
-                    
-                    </textarea>
-                 <br>
-                <input type="submit" value="Valider"> 
-            
-            
-            
-            
+                <textarea name="message" rows="5" cols="30"></textarea> <br>
+
+                  <input type="submit" value="Submit"> 
+                
+              </div>
             </form>
+               
+                  
+               
+            
+            
+            
+            
               
         </div>   
+        
+        <div class="col3">
+            
+            
+            
+        </div>
+    </div>
+
         
         <div class="col3">
             
