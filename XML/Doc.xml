@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-       
+       <!-- <?xml-stylesheet href="#" type="text/css"?> -->
       <bibliothèque>
         <oeuvre1>
+
+            <catégorie>Lorem</catégorie>
+
             <titre>Le petit prince</titre>
             
             <auteur>Antoine de SAINT-EXUPERY</auteur>
